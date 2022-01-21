@@ -65,7 +65,9 @@ Rooms included in this array won't be tracked, however, it is still possible to 
 
 ### Setting up multiple save slots
 If you want multiple save slots to be available, you need to create your own system to keep track of how many you'd like to include, and you'd
-loop through each file in the game's appdata directory, looking for files matching the PREFIX and EXT you set (LEARN MORE).
+loop through each file in the game's appdata directory, looking for files matching the PREFIX and EXT you set. [More info](https://github.com/VeroSquirrel/VerosSaveSystemDocumentation/blob/main/README.md#setting-a-custom-prefix-and-extension-for-the-save-file)
+
+
 To set a different slot where the system will save or load from, you may use the ```SetCurrentSlot(int)``` function.
 Example:
 ```
