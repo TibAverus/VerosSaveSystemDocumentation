@@ -1,6 +1,7 @@
 # Vero's Save Game
 ## Full documentation
 #### This readme serves as the documentation for my small code bit for GameMaker studio 2 that helps developers implement a very simple save and load function into their games with just a few lines of code.
+##### If you need any help, don't hesitate to reach out to me at dev.predationwebsite@outlook.com and I'll get back to you as soon as possible!
 
 ### Quickstart
 If you don't care for any of the advanced features, and just want a quick and easy save and load system, here's what you need to do.
