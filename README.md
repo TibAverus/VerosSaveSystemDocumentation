@@ -184,3 +184,11 @@ if (file_exists(filename))
   show_debug_message("Overwriting file: " + filename);
 }
 ```
+
+### Setting which layer we'd like to use
+Once our game gets big enough, we might not want to iterate through every single object in the entire game when saving or loading, and for that, we can tell the save system which layer to look for specifically. Currently, you may only set one. This means that, if you create an instance layer, and only put objects which have a ```save()``` and ```load()``` function there, the game will ONLY iterate through those objects, ignoring all the other instance layers completely, potentially speeding up save and load times.
+All we have to do is edit the ```InstanceLayerToUse``` variable in the ```VeroSaveSystem``` object's create event, and set it to the string of the layer we'd like to check. Later on, it'll be possible to add more than one layer.
+Example:
+```
+InstanceLayerToUse = "Instances";
+```
